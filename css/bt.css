@@ -1,0 +1,397 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto Mono', monospace;
+	scroll-behavior: smooth;
+}
+.ontop{
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	z-index: 3;
+	background: black;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;	
+	line-height: 50px;
+	text-align: center;
+
+}
+.ontop:hover{
+	transition: 0.3s;
+	background: gray;
+}
+.ontop a{
+	color: white;
+	
+}
+.header .menu-hamburger{
+	position: fixed;   /*lệnh  con nhưng neo lại khi mình kéo trang xuống*/
+	top: 25px;
+	right: 25px;
+	width: 50px;
+	height: 50px;
+	background: black;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 50px;
+	cursor: pointer;
+	z-index: 2;          /*để đè lên trên ảnh*/
+}
+.header .menu-hamburger:hover~.menu-header{
+	opacity: 1;
+	transition: 0.3s;
+}
+.header .menu-hamburger:hover{
+	background: gray;
+	transition: 0.3s;	
+}
+.header .menu-hamburger a{
+	color: white;
+	font-size: 16px;
+	z-index: 
+
+}
+.header .menu-header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 20%;
+	background: blue;
+	z-index: 1;
+	opacity: 0;
+	
+}
+.header .menu-header h1{
+	background: #1f7996;
+	padding-left: 20px;
+	font-size: 20px;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+.header .menu-header ul{
+	list-style: none;
+	/*padding-left: 20px;*/
+}
+.header .menu-header ul li{
+	padding: 20px 0;
+	padding: 20px 0 20px 20px;
+
+}
+.header .menu-header ul li:hover{
+	background: #64a19d;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.header .menu-header ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: 400;
+	font-size: 18px;
+}
+.header{
+	background-image: url(../images/anh1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+.header .wrap-header{
+	text-align: center;
+	/*justify-content: space-between;*/
+	width: 80%;
+	margin: 0 auto;
+
+}
+.header .wrap-header .menu-header ul{
+	display: flex;
+	justify-content: space-between;
+	margin: 25px 0;
+	list-style: none;
+}
+.header .wrap-header .text-header{
+	/*margin: 100px 0;*/
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.header .wrap-header .text-header h1{
+	font-weight: 700;
+	font-size: 50px;
+	
+}
+.header .wrap-header .text-header h3{
+	font-weight: 500;
+	font-size: 20px;
+	font-style: italic;
+	margin-bottom: 45px;
+}
+.header .wrap-header .text-header .btn-header{
+	padding: 15px 20px;
+	border: 1px;
+	outline: none;
+	border-radius: 10px;
+	background: #1d809f;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+
+}
+.header .wrap-header .text-header .btn-header:hover{
+	transition: 0.3s;
+	background: gray;
+}
+
+.por{
+	padding: 100px 0;
+}
+.por .wrap-por{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	
+
+}
+.por .wrap-por h1{
+	font-size: 25px;
+	margin-bottom: 20px;
+	font-weight: 700;
+
+}
+.por .wrap-por h3{
+	font-weight: 500;
+	font-size: 15px;
+	margin-bottom: 40px;
+}
+.por .wrap-por .btn-por{
+	padding: 15px 20px;
+	background: gray;
+	border-radius: 15px;
+	border: 1px;
+	outline: none;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.por .wrap-por .btn-por:hover{
+	background: aqua;
+	transition: 0.3s;
+}
+
+
+.service{
+	background: #1d809f;
+}
+.service .wrap-service{
+	width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+.service .wrap-service .items{
+	display: flex;
+	margin-top: 35px;
+}
+.service .wrap-service .items .icon-service i{
+	width: 100px;
+	height: 100px;
+	background: white;
+	border-radius: 50%;
+	line-height: 100px;
+	font-size: 40px;
+	color: #588aa5;
+}
+/*.service .wrap-service .items .icon-service i:hover{
+	transform: scale(0.6);
+	background: black;
+	cursor: pointer;
+	transition: all .3s ;
+}*/
+.service .wrap-service .items .icon-service h3{
+	margin: 20px 0;
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+}
+.service .wrap-service .items .icon-service p{
+	font-size: 15px;
+	font-style: italic;
+	color: white;
+}
+.header2{
+	background-image: url(../images/anh3.jpg);
+}
+.header2 h1{
+	margin-bottom: 50px;
+}
+.service .wrap-service .text-service h2{
+	font-size: 20px;
+	color: yellow;
+	font-weight: 400;
+}
+.service .wrap-service .text-service h1{
+	font-size: 40px;
+	font-weight: 500;
+	color: white;
+}
+.project{
+
+}
+.project .wrap-project{
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+}
+.project .wrap-project .item {
+	display: flex;
+	flex-wrap: wrap;
+	
+	width: 90%;
+	margin: 0 auto;
+	/*cursor: pointer;*/
+}
+.project .wrap-project .item .item-img img{
+	width: 100%;
+	height: 100%;
+
+}
+.project .wrap-project .item .item-img:hover img{
+	transition: all 0.3s;
+	opacity: 0.5;
+}
+.project .wrap-project .item .item-img {
+	width: 50%;
+	position: relative;
+}
+.project .wrap-project .item img:hover{
+	transform: scale(0.9);
+	
+	cursor: pointer;
+	transition: all .5s ;
+}
+/*.project .wrap-project .item .layout-project{
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
+.project .wrap-project .item .item-img .layout-project{
+	text-align: left;
+	position: absolute;
+	bottom: 93px;
+	left: 100px;
+}
+.project .wrap-project .item .item-img .layout-project  h2 ,
+.project .wrap-project .item .item-img .layout-project  p{
+ 	color: white;
+ 	font-weight: 500;	
+
+}
+
+.project .wrap-project .text-project{
+	padding: 100px 0;
+}
+.project .wrap-project .text-project h3{
+	font-size: 15px;
+	font-weight: 700;
+	color: #fed136;
+}
+.project .wrap-project .text-project h1{
+	font-weight: 700;
+	font-size: 50px;
+
+}
+
+
+.content{
+	background: #1d809f;
+	margin-top: 25px;
+}
+.content .wrap-content{
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 150px 0;
+}
+.content .wrap-content h1{
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 35px;
+	color: white;
+}
+
+.content .wrap-content .btn1{
+	padding: 20px 25px;
+	border: 1px;
+	outline: none;
+	border-radius: 10px;
+	margin: 0 20px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+
+
+}
+.btn-content1{
+	background: white;
+}
+.btn-content2{
+	background: gray;
+}
+.content .wrap-content .btn1:hover{
+	transition: 0.3s;
+	background: #c1ccd0;
+}
+.map .wrap-map iframe{
+	width: 100%;
+}
+.footer{
+
+}
+.footer .wrap-footer{
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 130px 0;
+	display: flex;
+	justify-content: center;
+	
+}
+.footer .wrap-footer .icon-footer i{
+	font-size: 30px;
+	margin: 0 20px;
+	color: white;
+	border: 2px;
+	background: #1d809f;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+
+}
+.footer .wrap-footer .icon-footer i:hover{
+	transition: 0.3s;
+	cursor: pointer;
+	background: gray;
+
+
+}
+.footer p{
+	text-align: center;
+	margin-top: -100px;
+	font-size: 12px;
+	color: #999c9f;
+}
+	
+
+.clip-path{
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+height: 100vh;
+
+	background-image: url(../images/anh1.jpg);
+}
